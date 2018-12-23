@@ -16,7 +16,7 @@ sudo chown root:root /etc/udev/rules.d/99-usbDaybaRobotArm.rules
 sudo chmod 644 /etc/udev/rules.d/99-usbDaybaRobotArm.rules
 
 #add extension to scratch extension libary 
-sudo cp ~/DaybaScripts/usbRobotArm/Setup/extensionFiles/* /usr/lib/scratch2/scratch_extensions/
+sudo cp -r ~/DaybaScripts/usbRobotArm/Setup/extensionFiles/* /usr/lib/scratch2/scratch_extensions/
 sudo cp ~/DaybaScripts/usbRobotArm/Setup/extensionFiles/images/* /usr/lib/scratch2/medialibrarythumbnails/
 
 #check for existance of arm in extensions file before installing another extension

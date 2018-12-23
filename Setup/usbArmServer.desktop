@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=UsbRobotArm Server
-Icon=/home/pi/DaybaScripts/usbRobotArm/pythonUSBArmServer.png
-Exec=/home/pi/DaybaScripts/usbRobotArm/pythonUSBArmServer.py 
+Icon=/home/pi/DaybaScripts/usbRobotArm/Setup/pythonUSBArmServer.png
+Exec=/home/pi/DaybaScripts/usbRobotArm/Setup/pythonUSBArmServer.py 
 Terminal=true
