@@ -17,18 +17,16 @@ Starting from a fresh installation of the Raspberry Pi operating system switch i
 5. ```bash
    cd ~/DaybaScripts
    ```
-6. 
-7. 
-8. ```bash
+6. ```bash
    git clone https://github.com/thebhd/usbRobotArm.git
    ```
-2. ```bash
+7. ```bash
    ~/DaybaScripts/usbRobotArm/Setup/setup.sh
    ```
 
-3. Follow any instructions that appear in the terminal window and reboot the Pi when prompted. 
+8. Follow any instructions that appear in the terminal window and reboot the Pi when prompted. 
 
-4. This should install the scratch extension and get everything ready for you. 
+9. This should install the scratch extension and get everything ready for you. 
 
 # Using the robot arm with Scratch 2
 
