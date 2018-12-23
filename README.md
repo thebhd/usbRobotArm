@@ -3,7 +3,7 @@ Scratch 2 Extension to control a USB Robot Arm with a Raspberry Pi
 
 # Installation 
 
-Starting from a fresh installation of the Raspberry Pi operating system switch it on and when your at the desktop. (see the useful pages section at the  end of this document for links on how to do this)
+Starting from a fresh installation of the Raspberry Pi operating system switch it on and when you're at the desktop. (see the useful pages section at the  end of this document for links on how to do this)
 
 1. Click on the `Terminal` Icon at the top left of the screen 
 
