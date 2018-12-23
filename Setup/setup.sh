@@ -11,13 +11,13 @@ pip install --pre pyusb
 
 #add udev rule 
 
-sudo cp ~/DaybaScripts/Setup/usbRobotArm/99-usbDaybaRobotArm.rules /etc/udev/rules.d/99-usbDaybaRobotArm.rules
+sudo cp ~/DaybaScripts/usbRobotArm/Setup/99-usbDaybaRobotArm.rules /etc/udev/rules.d/99-usbDaybaRobotArm.rules
 sudo chown root:root /etc/udev/rules.d/99-usbDaybaRobotArm.rules
 sudo chmod 644 /etc/udev/rules.d/99-usbDaybaRobotArm.rules
 
 #add extension to scratch extension libary 
-sudo cp ~/DaybaScripts/Setup/usbRobotArm/extensionFiles/* /usr/lib/scratch2/scratch_extensions/
-sudo cp ~/DaybaScripts/Setup/usbRobotArm/extensionFiles/images/* /usr/lib/scratch2/medialibrarythumbnails/
+sudo cp ~/DaybaScripts/usbRobotArm/Setup/extensionFiles/* /usr/lib/scratch2/scratch_extensions/
+sudo cp ~/DaybaScripts/usbRobotArm/Setup/extensionFiles/images/* /usr/lib/scratch2/medialibrarythumbnails/
 
 #check for existance of arm in extensions file before installing another extension
 if grep -q 'USB Robot Arm' /usr/lib/scratch2/scratch_extensions/extensions.json; then
@@ -30,14 +30,14 @@ else
 
     #add reference to the extension to extensions.json
     sudo rm /usr/lib/scratch2/scratch_extensions/extensions.json #haveing to delete the original is annoying but for some reason jq output to sudo tee does not work properly otherwise 
-    sudo jq -s add /usr/lib/scratch2/scratch_extensions/extensions.json.dflt ~/DaybaScripts/Setup/usbRobotArm/scratch_extensions_template.json | sudo tee -a /usr/lib/scratch2/scratch_extensions/extensions.json
+    sudo jq -s add /usr/lib/scratch2/scratch_extensions/extensions.json.dflt ~/DaybaScripts/usbRobotArm/Setup/scratch_extensions_template.json | sudo tee -a /usr/lib/scratch2/scratch_extensions/extensions.json
 fi
 
 #copy short cut to the pi desktop
-cp  ~/DaybaScripts/Setup/usbRobotArm/usbArmServer.desktop ~/Desktop/usbArmServer.desktop
+cp  ~/DaybaScripts/usbRobotArm/Setup/usbArmServer.desktop ~/Desktop/usbArmServer.desktop
 
 #copy the examples to the desktop
-sudo cp ~/DaybaScripts/Setup/usbRobotArm/Scratch2Examples/* ~/Desktop/Scratch2Examples/
+sudo cp ~/DaybaScripts/usbRobotArm/Setup/Scratch2Examples/* ~/Desktop/Scratch2Examples/
 
 
 
