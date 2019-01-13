@@ -38,7 +38,7 @@ cp  ~/DaybaScripts/usbRobotArm/Setup/usbArmServer.desktop ~/Desktop/usbArmServer
 
 #copy the examples to the desktop
 mkdir ~/Desktop/Scratch2Examples
-sudo cp ~/DaybaScripts/usbRobotArm/Setup/Scratch2Examples/* ~/Desktop/Scratch2Examples/
+cp ~/DaybaScripts/usbRobotArm/Setup/Scratch2Examples/* ~/Desktop/Scratch2Examples/
 
 
 
